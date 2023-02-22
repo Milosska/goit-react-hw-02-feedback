@@ -1,14 +1,15 @@
 import PropTypes from 'prop-types';
 import { Fragment } from 'react';
+import { Button } from './FeedbackOptions.styled';
 
 export const FeedbackOptions = ({ options, onLeaveFeedback }) => {
   return (
     <Fragment>
       {Object.keys(options).map(key => {
         return (
-          <button type="button" key={key} onClick={onLeaveFeedback}>
+          <Button type="button" key={key} onClick={onLeaveFeedback}>
             {key}
-          </button>
+          </Button>
         );
       })}
     </Fragment>

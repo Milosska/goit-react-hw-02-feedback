@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types';
 import { Fragment } from 'react';
+import { Info } from './Statistics.styled';
 
 export const Statistics = ({
   good,
@@ -10,11 +11,11 @@ export const Statistics = ({
 }) => {
   return (
     <Fragment>
-      <p> Good: {good}</p>
-      <p> Neutral: {neutral}</p>
-      <p> Bad: {bad}</p>
-      <p> Total: {total}</p>
-      <p>Positive feedback: {positivePercentage}%</p>
+      <Info>Good: {good}</Info>
+      <Info>Neutral: {neutral}</Info>
+      <Info>Bad: {bad}</Info>
+      <Info>Total: {total}</Info>
+      <Info>Positive feedback: {positivePercentage}%</Info>
     </Fragment>
   );
 };

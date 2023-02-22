@@ -3,6 +3,7 @@ import { Section } from './Section/Section';
 import { FeedbackOptions } from './FeedbackOptions/FeedbackOptions';
 import { Statistics } from './Statistics/Statistics';
 import { Notification } from './Notification/Notification';
+import { GlobalStyles } from './GlobalStyles';
 
 export class App extends Component {
   state = {
@@ -48,6 +49,7 @@ export class App extends Component {
   render() {
     return (
       <div>
+        <GlobalStyles />
         <Section title="Please leave feedback">
           <FeedbackOptions
             options={this.state}
